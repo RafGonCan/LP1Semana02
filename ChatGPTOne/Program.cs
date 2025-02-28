@@ -8,9 +8,10 @@ namespace ChatGPTOne
         {
             //declare string variables
             string question, response;
+            bool ext  = true;
 
             //Start of the cicle
-            while (true)
+            while (ext)
             {
                 //starting question
                 Console.WriteLine("What is your question?");
@@ -23,7 +24,7 @@ namespace ChatGPTOne
                         response = "The best AI you ever known!";
                         Console.WriteLine(response);
                     break;
-                    case "how old are you?":
+                    case "How old are you?":
                         response = "I'm 5000 years old!!!";
                         Console.WriteLine(response);
                     break;
@@ -36,6 +37,7 @@ namespace ChatGPTOne
                         Console.WriteLine(response);
                     break;
                     case "EXIT":
+                        ext = false;
                     break;
                     default:
                         response = "Don't understand the question...";
