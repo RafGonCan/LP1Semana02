@@ -47,9 +47,17 @@ namespace ValoresEspeciais
             Console.WriteLine($"{iii}, {iiii}, {iiiii}");
             Console.WriteLine($"{jjj}, {jjjj}, {jjjjj}");
 
-            //overflow uint
+            //Declare overflow uint
             uint m = uint.MaxValue;
             Console.WriteLine((uint)(m+1));
+
+            //DEclare overflow float
+            float n = 2 * float.MaxValue;
+            float o = float.MaxValue + 1;
+            
+            //show overflows
+            Console.WriteLine(n);
+            Console.WriteLine(o);
         }
     }
 }
