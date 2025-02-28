@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace ValoresEspeciais
 {
@@ -51,13 +52,20 @@ namespace ValoresEspeciais
             uint m = uint.MaxValue;
             Console.WriteLine((uint)(m+1));
 
-            //DEclare overflow float
+            //Declare overflow float
             float n = 2 * float.MaxValue;
             float o = float.MaxValue + 1;
             
             //show overflows
             Console.WriteLine(n);
             Console.WriteLine(o);
+
+            //Declare underflow
+            float p, q;
+            p = q = 1000000.0f;
+            
+            //show underflow
+            Console.WriteLine(p == q + 0.0000001f);
         }
     }
 }
