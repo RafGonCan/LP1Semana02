@@ -46,6 +46,10 @@ namespace ValoresEspeciais
             //show special values
             Console.WriteLine($"{iii}, {iiii}, {iiiii}");
             Console.WriteLine($"{jjj}, {jjjj}, {jjjjj}");
+
+            //overflow uint
+            uint m = uint.MaxValue;
+            Console.WriteLine((uint)(m+1));
         }
     }
 }
