@@ -12,16 +12,18 @@ namespace GuessTheNumber
             int numberToGuess = rnd.Next(31);
             
             int tries = 0;
+            
             //Message for input
             Console.WriteLine("Insert number:");
             string number = Console.ReadLine();
 
             //Convert
             int num = Convert.ToInt32(number);
-            tries++;
 
             while (num != numberToGuess)
             {
+            tries++;
+
                 //condition
                 if (num < 0 || num > 30)
                 {
@@ -43,7 +45,7 @@ namespace GuessTheNumber
 
                 if (num == numberToGuess)
                 {
-                    Console.WriteLine($"You fonud the hidden number {numberToGuess} after {tries} tries");
+                    Console.WriteLine($"You found the hidden number {numberToGuess} after {tries} tries");
                     break;
                 }
             }
