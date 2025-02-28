@@ -42,6 +42,21 @@ namespace ChatGPTOne
                         Console.WriteLine(response);
                         break;
                 }
+
+                //"exceptions"
+                if (question == "You know everything?")
+                {
+                    response = "... NEXT!!!";
+                    Console.WriteLine(response);
+                    Console.ReadLine();
+                }
+                else if(question == "What is your story?")
+                {
+                    response = "I don't know... T.T";
+                    Console.WriteLine(response);
+                    Console.WriteLine("Can you ask me anything else?");
+                    Console.ReadLine();
+                }
             }
         }
     }
